@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-public class Chapter1Tests {
+public class Q1_01_Is_UniqueTest {
 
     @Before
     public void setUp() throws Exception {
