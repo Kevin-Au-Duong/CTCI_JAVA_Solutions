@@ -3,18 +3,18 @@ package Chapter1;
 import java.util.Arrays;
 
 /**
- * Question 2.2
+ * Question 1.2
  * Check Permutation: Given two strings, write a method to decide if one is a permutation of the
  * other.
  *
- * Assumes characters in strings are strictly 128-char Ascii
- * A permutation of a string is another string with the exact same set of characters (no less, no more) as the
- * original string, except in different order. Implications are:
- * 1. Permutation has the same length as original
- * 2. For every character in Ascii, the permutation has the same tally for each of those characters as the original
+ *      Assumes characters in strings are strictly 128-char Ascii
+ *      A permutation of a string is another string with the exact same set of characters (no less, no more) as the
+ *      original string, except in different order. Implications are:
+ *      1. Permutation has the same length as original
+ *      2. For every character in Ascii, the permutation has the same tally for each of those characters as the original
  *
- * Space complexity: O(1): Uses 2 arrays of 128 int
- * Time Complexity: O(n): Iterates through every char of string with length n
+ *      Space complexity: O(1): Uses 2 arrays of 128 int
+ *      Time Complexity: O(n): Iterates through every char of string with length n
  */
 public class Q1_02_Check_Permutation {
     String string;

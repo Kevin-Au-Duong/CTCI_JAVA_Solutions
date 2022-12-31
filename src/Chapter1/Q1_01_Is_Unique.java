@@ -5,14 +5,14 @@ import java.util.*;
  * Question 1.1
  * Is Unique: Implement an algorithm to determine if a string has all unique characters. What if you
  * cannot use additional data structures?
- * <p>
- * This solution assumes that every character in the provided string
- * is an ascii character (has a unique ascii code). Ascii is 128 characters long
- * <p>
- * Space complexity: O(1), only uses an array of size 128 for every string
- * Time complexity: O(n), with n being the length of the string
- * <p>
- * Solution has the same logic as the one provided in the book.
+ *
+ *      This solution assumes that every character in the provided string
+ *      is an ascii character (has a unique ascii code). Ascii is 128 characters long
+ *
+ *      Space complexity: O(1), only uses an array of size 128 for every string
+ *      Time complexity: O(n), with n being the length of the string
+ *
+ *      Solution has the same logic as the one provided in the book.
  */
 public class Q1_01_Is_Unique {
     String string;
