@@ -21,7 +21,7 @@ public class Q1_04_Palindrome_Permutation {
         this.string = string;
     }
 
-    public boolean checkForPalindromePermutation() {
+    public boolean checkForPalindromePermutation() { 
         /*
         int[] charCountHashTable = new int[Character.getNumericValue('a') - Character.getNumericValue('z') + 1];
         Arrays.fill(charCountHashTable, 0);

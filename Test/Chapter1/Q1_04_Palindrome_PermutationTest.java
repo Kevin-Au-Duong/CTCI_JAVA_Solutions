@@ -17,4 +17,28 @@ public class Q1_04_Palindrome_PermutationTest {
         assertFalse(q104PalindromePermutation.checkForPalindromePermutation());
     }
 
+    @Test
+    public void allAOddTest() {
+        Q1_04_Palindrome_Permutation q104PalindromePermutation = new Q1_04_Palindrome_Permutation("AAAAAAAAAAAAA");
+        assertTrue(q104PalindromePermutation.checkForPalindromePermutation());
+    }
+
+    @Test
+    public void allAEvenTest() {
+        Q1_04_Palindrome_Permutation q104PalindromePermutation = new Q1_04_Palindrome_Permutation("AAAAAAAAAAAA");
+        assertTrue(q104PalindromePermutation.checkForPalindromePermutation());
+    }
+
+    @Test
+    public void differentCasesTest() {
+        Q1_04_Palindrome_Permutation q104PalindromePermutation = new Q1_04_Palindrome_Permutation("AaBBccD");
+        assertTrue(q104PalindromePermutation.checkForPalindromePermutation());
+    }
+
+    @Test
+    public void differentCasesFalseTest() {
+        Q1_04_Palindrome_Permutation q104PalindromePermutation = new Q1_04_Palindrome_Permutation("AaBBccDe");
+        assertFalse(q104PalindromePermutation.checkForPalindromePermutation());
+    }
+
 }
