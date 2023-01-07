@@ -72,5 +72,25 @@ public class Q1_05_One_AwayTest {
         assertFalse(q105OneAway.oneAway("Hello There", "General Kenobi, you are a bold one"));
     }
 
+    @Test
+    public void oneTwoSpace() {
+        Q1_05_One_Away q105OneAway = new Q1_05_One_Away();
+
+        assertTrue(q105OneAway.oneAway(" ", "  "));
+    }
+
+    @Test
+    public void spaceAndCharTest() {
+        Q1_05_One_Away q105OneAway = new Q1_05_One_Away();
+
+        assertTrue(q105OneAway.oneAway(" ", "a"));
+    }
+
+    @Test
+    public void twoStepsAwayTest() {
+        Q1_05_One_Away q105OneAway = new Q1_05_One_Away();
+
+        assertFalse(q105OneAway.oneAway("pale", "plae"));
+    }
 
 }
