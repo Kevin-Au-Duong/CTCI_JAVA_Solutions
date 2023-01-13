@@ -9,7 +9,10 @@ import java.util.Arrays;
  * is a rearrangement of letters. The palindrome does not need to be limited to just dictionary words.
  *
  *      Assumption: Space char is not considered in the palindrome
- * 
+ *
+ *      Time Complexity O(n): function loops through the chars of the provided string
+ *      Space Complexity O(1): function uses array of booleans of
+ *      size (Character.getNumericValue('z') - Character.getNumericValue('a') + 1)
  */
 
 public class Q1_04_Palindrome_Permutation {
@@ -51,7 +54,8 @@ public class Q1_04_Palindrome_Permutation {
     // Learned from the provided solution. Is a very neat trick that I should remember for future uses
     private boolean[] countCharOfStringCaseInsensitive() {
 
-        boolean[] charOddCountHashTable = new boolean[Character.getNumericValue('z') - Character.getNumericValue('a') + 1];
+        boolean[] charOddCountHashTable = new boolean[Character.getNumericValue('z')
+                - Character.getNumericValue('a') + 1];
         Arrays.fill(charOddCountHashTable, false);
 
         int a = Character.getNumericValue('a');

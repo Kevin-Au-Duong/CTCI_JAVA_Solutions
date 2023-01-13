@@ -1,5 +1,14 @@
 package Chapter1;
 
+/**
+ * Question 1.5
+ * One Away: There are three types of edits that can be performed on strings: insert a character,
+ * remove a character, or replace a character. Given two strings, write a function to check if they are
+ * one edit (or zero edits) away.
+ *
+ *      Time Complexity O(n): function loops through the shorter string of length n
+ *      Space Complexity O(n): function only stores the strings to iterate through their chars
+ */
 public class Q1_05_One_Away {
     public boolean oneAway(String string1, String string2) {
 

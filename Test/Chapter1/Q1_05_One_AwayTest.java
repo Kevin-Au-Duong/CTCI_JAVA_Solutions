@@ -93,4 +93,11 @@ public class Q1_05_One_AwayTest {
         assertFalse(q105OneAway.oneAway("pale", "plae"));
     }
 
+    @Test
+    public void sameLengthDifferentCharsTest() {
+        Q1_05_One_Away q105OneAway = new Q1_05_One_Away();
+
+        assertFalse(q105OneAway.oneAway("aaaa", "bbbb"));
+    }
+
 }

@@ -8,6 +8,9 @@ package Chapter1;
  * perform this operation in place.)
  *
  *     Performing operation in place means that no additional memory is used.
+ *
+ *     Time Complexity O(n): the function loops through the original string of size n
+ *     Space Complexity O(m): the function uses an array of size m of the modified string
  */
 public class Q1_03_URLify {
     String string;
